@@ -1,0 +1,5 @@
+query search($id: ID, $type: String, $subType: String, $startCreatedTimestamp: Int, $endCreatedTimestamp: Int, $startUpdatedTimestamp: Int, $endUpdatedTimestamp: Int, $tag: String, $start: Int, $limit: Int, $query: String, $sort: String, $order: String, $matchFilters: [MatchFilterInput], $termsFilters: [TermsFilterInput], $rangeFilterGroups: [RangeFilterInput]){
+  search(id: $id, type: $type, subType: $subType, startCreatedTimestamp: $startCreatedTimestamp, endCreatedTimestamp: $endCreatedTimestamp, startUpdatedTimestamp: $startUpdatedTimestamp, endUpdatedTimestamp: $endUpdatedTimestamp, tag: $tag, start: $start, limit: $limit, query: $query, sort: $sort, order: $order, matchFilters: $matchFilters, termsFilters: $termsFilters, rangeFilterGroups: $rangeFilterGroups){
+    endCreatedTimestamp
+    }
+}
